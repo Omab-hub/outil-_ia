@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f5f4;
+  color: #1c2530;
+  margin: 0;
+}
+
+main {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+h1 {
+  color: #1f9e8f;
+}
+
+#formulaire {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#titre {
+  flex: 1 1 200px;
+}
+
+input, select, button {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+button {
+  background: #1f9e8f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #17796d;
+}
+
+#erreur {
+  color: #c0392b;
+  min-height: 20px;
+}
+
+#outils {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 10px 0 20px;
+}
+
+#liste {
+  list-style: none;
+  padding: 0;
+}
+
+.tache {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border-left: 6px solid #999;}
+
+.titre {
+  flex: 1;
+}
+
+.terminee .titre {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.cours  { border-left-color: #2e5e8c; }
+.perso  { border-left-color: #e87333; }
+.projet { border-left-color: #7054a3; }
+
+.badge {
+  color: white;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.haute   { background: #c0392b; }
+.moyenne { background: #e87333; }
+.basse   { background: #1f9e8f; }
+
+.petit {
+  background: #5f6b73;
+  padding: 5px 8px;
+}
+
+.supprimer {
+  background: #c0392b;
+}

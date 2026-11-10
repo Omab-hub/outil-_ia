@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TaskFlow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>TaskFlow</h1>
+
+    <form id="formulaire">
+      <input type="text" id="titre" placeholder="Titre de la tâche…">
+
+      <select id="priorite">
+        <option value="haute">Haute</option>
+        <option value="moyenne" selected>Moyenne</option>
+        <option value="basse">Basse</option>
+      </select>
+
+      <select id="categorie">
+        <option value="cours">Cours</option>
+        <option value="perso">Perso</option>
+        <option value="projet">Projet</option>
+      </select>
+
+      <input type="date" id="echeance">
+
+      <button type="submit" id="bouton">Ajouter</button>
+    </form>
+
+    <p id="erreur"></p>
+
+    <section id="outils">
+      <label>Trier par
+        <select id="tri">
+          <option value="aucun">Ordre d'ajout</option>
+          <option value="priorite">Priorité</option>
+          <option value="date">Date</option>
+        </select>
+      </label>
+
+      <label>Statut
+        <select id="filtreStatut">
+          <option value="toutes">Toutes</option>
+          <option value="a_faire">À faire</option>
+          <option value="terminee">Terminées</option>
+        </select>
+      </label>
+
+      <label>Catégorie
+        <select id="filtreCategorie">
+          <option value="toutes">Toutes</option>
+          <option value="cours">Cours</option>
+          <option value="perso">Perso</option>
+          <option value="projet">Projet</option>
+        </select>
+      </label>
+    </section>
+
+    <ul id="liste"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
